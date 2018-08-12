@@ -1,0 +1,42 @@
+/*
+即便是对于一个初级的程序员来说，交换两个数也是一件简单的不能再简单的事情，问题是
+
+你能写出多少种方法？
+
+
+*/
+public class ExchangeTwoNum{
+	public void method1(int x,int y){
+		int temp = x;
+		x = y;
+		y = temp;
+		
+		System.out.prtintln("x:" + x);
+		System.out.prtintln("y:" + y);
+		
+	}
+	
+	public void method(int x,int y){
+		x = x + y;
+		y = x - y;
+		x = x - y;
+		System.out.prtintln("x:" + x);
+		System.out.prtintln("y:" + y);
+	}
+	
+	public void(int x,int y){
+		x = x ^ y;
+		y = x ^ y;
+		x = x ^ y
+		System.out.prtintln("x:" + x);
+		System.out.prtintln("y:" + y);
+	}
+	
+	public static void main(String[] args){
+	
+		ExchangeTwoNum e = new ExchangerTwoNum();
+		e.method1;
+		e.method2;
+		e.method3;
+	}
+   
