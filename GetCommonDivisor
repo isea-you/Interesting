@@ -1,0 +1,28 @@
+public class GetCommonDivisor(){
+	public void method1(int x,int y){
+		int mui = x * y;
+		while(y != 0){
+			int z = x % y;
+			x = y;
+			y = z;
+		}
+		System.out.println("最大公约数为： " + x);
+		System.out.println("最小公倍数为： " + mui / x);
+	}
+	
+	public void method(int x,int y){
+		int min = x < y	? x : y;
+		int i;
+		for(i = min ; i >= 1 ; i --){
+			if(x % i == 0 || y % i == 0){
+				Sytem.out.println("最大公约数为： " + i);
+			}
+			break;
+		}
+		System.out.println("最小公倍数是：" + x * y / i );
+	}
+	public static void main(String[] args){
+		GetCommonDivisor g = new GetCommonDivisor();
+		g.method1(3,9);
+		g.method2(9,3);
+	}
